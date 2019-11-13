@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".navigation.homeFragment">
+    <androidx.appcompat.widget.Toolbar android:layout_width="match_parent"
+                                       android:id="@+id/home_toolbar"
+                                       android:background="@color/colorWhite"
+                                       android:layout_height="40dp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+<androidx.appcompat.widget.AppCompatImageView android:layout_width="100dp"
+                                              android:src="@drawable/instagram"
+
+                                              android:layout_height="40dp"/>
+    <Button android:layout_width="30dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/send_icon"
+            android:theme="@color/colorWhite"
+            android:layout_centerInParent="true"
+            android:layout_height="28dp"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.recyclerview.widget.RecyclerView android:layout_width="match_parent"
+                                               android:layout_below="@+id/home_toolbar"
+                                               android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>
